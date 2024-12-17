@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    /* background-color:aqua; */
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    padding: 16px 120px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(202, 202, 202);
+}
+
+header .nav-left {
+    width: 200px;
+}
+
+header .nav-left img {
+    width: 100%;
+}
+
+header nav {
+    display: flex;
+    gap: 24px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+}
+
+header .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+header .nav-right svg {
+    color: rgb(185, 185, 185);
+}
+
+header .nav-right button {
+    padding: 4px 8px;
+    background: none;
+    border: 0;
+    font-size: 14px;
+}
+
+header .nav-right .cart {
+    position: relative;
+}
+
+header .nav-right .cart span{
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    border-radius: 50%;
+}
+
+.content {
+    padding: 24px 120px;
+}
+
+.content .card-container{
+    display: flex;
+    gap: 16px;
+
+}
+
+.content .icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: rgb(144, 219, 219);
+    border: 1px solid rgb(144, 219, 219);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .card-img {
+    width: 150px;
+}
+
+.content .card-img img{
+    width: 100%;
+}
+
+.content .card-item {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 32px;
+    border-radius: 16px;
+    background-color: hsl(0, 0%, 98%);
+
+
+}
+
+.content .card-left, .card-right {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    width: 50%;
+} 
+
+.content .cart-detail {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+}
+
+.content .dots {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.content .dots .dot{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.content .dots .dot div{
+    width: 16px;
+    height: 16px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.content .dots .dot .active{
+    width: 16px;
+    height: 16px;
+    background-color: rgb(144, 219, 219);
+    border-radius: 50%;
+}
+
+.content .card-right {
+    padding:  32px;
+    border-radius: 16px;
+    border: 1px solid #eee;
+    height: fit-content;
+    gap: 24px;
+}
+
+.content .card-right .subtotal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: gray;
+    
+}
+
+.content .card-right .promotion-code {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #eee;
+}
+
+.content .card-right .icon-code {
+    color: rgb(144, 219, 219);
+}
+
+.content .card-right .input-code {
+    flex: 1;
+}
+
+.input-code input {
+    padding: 14px 12px;
+    font-size: 14px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #eee;
+}
+
+.content .card-right .promotion-code button {
+    color: rgb(144, 219, 219);
+    padding: 16px 32px;
+    border: 1px solid rgb(144, 219, 219);
+    border-radius: 16px;
+    background: transparent;
+
+}
+
+.content .card-right .total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .card-right .total h2 {
+    color: rgb(144, 219, 219);
+}
+
+.content .card-right button {
+    background-color: rgb(144, 219, 219);
+    padding: 16px;
+    font-size: 16px;
+    border: 0;
+    border-radius: 16px;
+}
+
